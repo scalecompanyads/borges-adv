@@ -38,9 +38,12 @@ a{color:inherit;text-decoration:none}
 h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.05;letter-spacing:-.01em}
 h2{font-size:clamp(2.2rem,4.4vw,3.6rem)}
 h2 em,h1 em{font-style:italic;color:var(--gold)}
+h1,h2,h3,summary{text-wrap:balance}
+p,li,.lead,details p{text-wrap:pretty}
+h2 em{white-space:nowrap}
 .eyebrow{display:inline-flex;align-items:center;gap:12px;font-size:.78rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-dim)}
 .eyebrow::before{content:"";width:28px;height:1px;background:currentColor}
-.lead{font-size:1.1rem;color:var(--muted);max-width:60ch}
+.lead{font-size:1.1rem;color:var(--muted);max-width:62ch;text-wrap:balance}
 
 /* botões */
 .btn{display:inline-flex;align-items:center;gap:12px;padding:18px 30px;border-radius:999px;font-weight:700;font-size:1rem;letter-spacing:.01em;transition:transform .25s ease, box-shadow .25s ease, background .25s}
@@ -147,7 +150,7 @@ section{padding:120px 0}
 .qcard li{padding:16px 0;border-top:1px solid var(--cream-2);display:flex;gap:14px;font-size:1.02rem}
 .qcard li::before{content:"“";font-family:var(--serif);font-size:2rem;line-height:.8;color:var(--gold)}
 .ident-foot{margin-top:44px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px;background:var(--cream);border-radius:24px;padding:30px 40px}
-.ident-foot p{font-family:var(--serif);font-size:1.6rem;line-height:1.2;max-width:34ch}
+.ident-foot p{font-family:var(--serif);font-size:1.6rem;line-height:1.2;max-width:34ch;text-wrap:balance}
 
 /* áreas */
 .areas{background:var(--cream)}
@@ -224,7 +227,7 @@ details p{padding:0 50px 28px 0;color:var(--muted)}
 .city::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(18,13,9,.94) 0%,rgba(18,13,9,.75) 45%,rgba(18,13,9,.25))}
 .city .wrap{position:relative;z-index:2;padding:110px 0}
 .city .eyebrow{color:var(--gold)}
-.city h2{margin:18px 0 20px;max-width:16ch}
+.city h2{margin:18px 0 20px;max-width:13em}
 .city p{color:#d6cab9;max-width:50ch;margin-bottom:34px}
 .modes{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:38px}
 .modes div{display:flex;gap:12px;align-items:center;padding:14px 20px;border-radius:14px;background:rgba(255,255,255,.06);border:1px solid rgba(207,168,108,.25);backdrop-filter:blur(6px)}
@@ -235,7 +238,7 @@ details p{padding:0 50px 28px 0;color:var(--muted)}
 .final::before{content:"";position:absolute;inset:0;background:radial-gradient(50% 70% at 50% 0%,rgba(207,168,108,.2),transparent 70%)}
 .final .wrap{position:relative}
 .final img.mono{width:84px;margin:0 auto 30px}
-.final h2{max-width:18ch;margin:0 auto 22px}
+.final h2{max-width:22ch;margin:0 auto 22px}
 .final p{color:#c9bba8;max-width:56ch;margin:0 auto 40px}
 footer{background:#0f0b08;color:#8f8272;font-size:.86rem;padding:44px 0}
 footer .wrap{display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:center}
@@ -348,7 +351,7 @@ footer img{height:54px;width:auto}
     <div class="head center rv">
       <span class="eyebrow">Você se identifica?</span>
       <h2>Dúvidas que chegam até nós <em>todos os dias</em></h2>
-      <p class="lead">Separação e perda de um familiar são momentos difíceis. Decisões tomadas sem orientação podem gerar prejuízos financeiros e conflitos que poderiam ser evitados.</p>
+      <p class="lead">Separação e perda de um familiar são momentos difíceis. Decisões tomadas sem orientação podem gerar prejuízos financeiros e conflitos que poderiam ser&nbsp;evitados.</p>
     </div>
     <div class="ident-grid">
       <div class="qcard rv">
@@ -373,7 +376,7 @@ footer img{height:54px;width:auto}
       </div>
     </div>
     <div class="ident-foot rv">
-      <p>Cada caso tem particularidades. A resposta certa começa com uma conversa.</p>
+      <p>Cada caso tem particularidades. A&nbsp;resposta certa começa com uma conversa.</p>
       <a class="btn btn-dark" data-wa="Olá! Tenho dúvidas sobre o meu caso e gostaria de orientação." href="#">Entrar em Contato</a>
     </div>
   </div>
@@ -524,7 +527,7 @@ footer img{height:54px;width:auto}
   <img src="assets/bh.webp" alt="Panorama de Belo Horizonte" loading="lazy" width="2200" height="1238">
   <div class="wrap">
     <span class="eyebrow rv">Atendimento</span>
-    <h2 class="rv">Em Belo Horizonte, região metropolitana <em>ou online</em></h2>
+    <h2 class="rv">Em Belo Horizonte, região&nbsp;metropolitana <em>ou online</em></h2>
     <p class="rv">Escolha o formato mais confortável para você. A consulta pode ser presencial ou por vídeo, com o mesmo cuidado.</p>
     <div class="modes rv">
       <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Presencial em BH</div>
