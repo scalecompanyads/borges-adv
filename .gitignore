@@ -1,0 +1,6 @@
+# brutos e originais (nao vao para o deploy)
+*.zip
+stock/
+assets-src/
+_shot.html
+_m.html
